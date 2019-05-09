@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .container {
+        width: 320px;
+
+        .sets,
+        .studyInterval,
+        .restInterval{
+
+            width: 100%;
+            margin-bottom: 40px;
+
+            .title {
+                font: 200 30px $primaryFont;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .subContainer {
+                .inside{
+                    width: 80.1%;
+                    display: inline-block;
+                    text-align: center;
+                    font: 200 30px $primaryFont;
+                    margin: 0 -4px 0 -4px;
+                }
+            }
+        }
+
+        .study {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
