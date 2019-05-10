@@ -5,6 +5,8 @@
 
 body {
     background-color: $secondaryColor;
+        overflow-x: hidden;
+        overflow-y: hidden;
 }
 
 button {
@@ -23,4 +25,8 @@ button {
 
 span {
     font: 200 30px $primaryFont;
+}
+
+.hide {
+    display: none;
 }
