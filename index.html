@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TIMER</title>
+    <title>study timer</title>
     <link rel="stylesheet" href="stylesheets/css/default.css">
 </head>
 <body>
@@ -14,11 +14,11 @@
                 <p class="title">sets</p>
 
                 <div class="subContainer">
-                    <button id="menos">-</button>
+                    <button id="setsLess">-</button>
                     <div class="inside">
-                        <span id="set">10</span>
+                        <input value="10" id="set" maxlength="2">
                     </div>
-                    <button class="mais" id="mais">+</button>
+                    <button id="setsMore">+</button>
                 </div>
             </div>
 
@@ -26,38 +26,38 @@
                 <p class="title">study interval</p>
                 
                 <div class="subContainer">
-                    <button id="menos">-</button>
+                    <button id="studyLess">-</button>
 
                     <div class="inside">
-                        <span id="min">10</span>
+                        <input value="10" id="studyMin" maxlength="2">
                         <span>:</span>
-                        <span id="sec">00</span>
+                        <input value="00" id="studySec" maxlength="2">
                     </div>
 
-                    <button class="mais" id="mais">+</button>
+                    <button id="studyMore">+</button>
                 </div>
             </div>
 
             <div class="restInterval">
-                <p class="title">study interval</p>
+                <p class="title">rest interval</p>
                 
                 <div class="subContainer">
-                    <button id="menos">-</button>
+                    <button id="restLess">-</button>
                     
                     <div class="inside">
-                        <span id="min">10</span>
+                        <input value="10" id="restMin" maxlength="2">
                         <span>:</span>
-                        <span id="sec">00</span>
+                        <input value="00" id="restSec" maxlength="2">
                     </div>
 
-                    <button class="mais"id="mais">+</button>
+                    <button id="restMore">+</button>
                 </div>
             </div>
 
-            <button class="study">study</button>
+            <button id="study" class="study">study</button>
         </div>
 
-        <div class="modal" id="modal">
+        <div class="hide" id="modal">
             <div class="modalContainer">
                 <div class="insideModal">
                         <span id="modalMin">10</span>
@@ -65,9 +65,11 @@
                         <span id="modalSec">00</span>
                 </div>
 
-                <button class="reset">reset</button>
+                <button id="reset" class="reset">reset</button>
             </div>
         </div>
     </header>
+
+<script src="js/setup.js"></script>
 </body>
 </html>

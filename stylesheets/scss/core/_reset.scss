@@ -23,7 +23,12 @@ button {
 }
 
 
-span {
+input {
+    width: 40px;
+    text-align: center;
+    background: none;
+    border: none;
+    outline: none;
     font: 200 30px $primaryFont;
 }
 
