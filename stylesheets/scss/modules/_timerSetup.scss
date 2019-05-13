@@ -16,6 +16,7 @@ header {
 
             .title {
                 font: 200 30px $primaryFont;
+                color: $primaryColor;
                 text-align: center;
                 margin: 10px;
             }
@@ -26,6 +27,7 @@ header {
                     display: inline-block;
                     text-align: center;
                     font: 200 30px $primaryFont;
+                    color: $primaryColor;
                     margin: 0 -4px 0 -4px;
                 }
             }

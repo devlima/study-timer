@@ -1,0 +1,74 @@
+// classes used
+
+.fadeOut {
+    animation: 1s forwards ease-in fadeOut;
+}
+
+.goDown {
+    animation: 1s forwards ease-in goDown;
+}
+
+
+// keyframes
+
+@keyframes fadeIn {
+    0% {
+        display: flex;
+        opacity: 0;
+    }
+    
+    10% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+};
+
+@keyframes fadeInModal {
+    0% {
+        opacity: 0;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+};
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    
+    30% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 0;
+        display: none;
+    }
+};
+
+@keyframes goDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100vh;
+    }
+}

@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" id="setsContainer">
             <div class="sets">
                 <p class="title">sets</p>
 
                 <div class="subContainer">
                     <button id="setsLess">-</button>
                     <div class="inside">
-                        <input value="10" id="set" maxlength="2">
+                        <input value="3" id="set" maxlength="2">
                     </div>
                     <button id="setsMore">+</button>
                 </div>
@@ -29,7 +29,7 @@
                     <button id="studyLess">-</button>
 
                     <div class="inside">
-                        <input value="10" id="studyMin" maxlength="2">
+                        <input value="50" id="studyMin" maxlength="2">
                         <span>:</span>
                         <input value="00" id="studySec" maxlength="2">
                     </div>
@@ -54,22 +54,28 @@
                 </div>
             </div>
 
-            <button id="study" class="study">study</button>
+            <button id="study" class="study" type="submit">study</button>
         </div>
 
         <div class="hide" id="modal">
-            <div class="modalContainer">
+            <div class="modalContainer" id="modalContainer">
+                <p id="modalSets"></p>
                 <div class="insideModal">
-                        <span id="modalMin">10</span>
+                        <span id="modalMin"></span>
                         <span>:</span>
-                        <span id="modalSec">00</span>
+                        <span id="modalSec"></span>
                 </div>
 
                 <button id="reset" class="reset">reset</button>
+            </div>
+
+            <div class="hide" id="congratulations">
+                <p>congratulations</p>
             </div>
         </div>
     </header>
 
 <script src="js/setup.js"></script>
+<script src="js/timer.js"></script>
 </body>
 </html>

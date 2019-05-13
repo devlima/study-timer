@@ -3,8 +3,9 @@
 
 @import 'core/_variables.scss';
 @import 'core/_reset.scss';
+@import 'core/_animations.scss';
 
 // modules
 
-@import 'modules/_timer.scss';
-@import 'modules/modal.scss';
+@import 'modules/_timerSetup.scss';
+@import 'modules/_modal.scss';
