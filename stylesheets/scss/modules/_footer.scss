@@ -1,0 +1,18 @@
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 100 16px $primaryFont;
+    color: $primaryColor;
+
+    a { 
+        font-weight: 400;
+        color: $primaryColor;
+        text-decoration: none;
+        transition: font-weight .4s;
+        &:hover {
+            font-weight: 800;
+        }
+    }
+}
