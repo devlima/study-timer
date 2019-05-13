@@ -47,18 +47,18 @@ function decrease(id){
 
     switch(id){
         case 'sets':
-            (sets === 0) ? sets = 60 : sets -= 1;
+            (sets == 1) ? sets = 1 : sets -= 1;
             output('set', sets);
         break;
 
         case 'study':
-            (studySec === 0) ? (studySec = 60, studyMin -= 1) : studySec -= 1;
+            (studySec == 0) ? (studySec = 60, studyMin -= 1) : studySec -= 1;
             output('studyMin', studyMin);
             output('studySec', studySec);
         break;
 
         case 'rest':
-            (restSec === 0) ? (restSec = 60, restMin -= 1) : restSec -= 1;
+            (restSec == 0) ? (restSec = 60, restMin -= 1) : restSec -= 1;
             showInput('restMin', restMin);
             output('restSec', restSec);
         break;
