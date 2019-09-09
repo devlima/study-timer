@@ -1,3 +1,2 @@
 # study-timer
-
- Just a simple [timer](https://devlima.github.io/study-timer) made in js with study purpose.
+A project to practice built-in timer functions em JavaScript
